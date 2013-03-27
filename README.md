@@ -17,8 +17,9 @@ g++ -o cv_smo_impr cv_smo_impr.cc -lm
 To know the usage of the executables, just type the executable name in
 the command line. For example, typing smo_impr (produced above) results
 in:
+
 Usage:
- training_samples, tr_file dim, C, sigmasqr/degree test_samples, Test_file kernelchoice(1:RBF,2:dp 3:poly) file format:sparse(1)/dense(0)
+num_training_samples, tr_file dim, C, sigmasqr/degree test_samples, Test_file kernelchoice(1:RBF,2:dp 3:poly) file format:sparse(1)/dense(0)
 
 smo_impr takes 9 arguments. They are:
 
@@ -53,13 +54,9 @@ that can be used for plotting support vectors and errors.
 
 ############## CROSS-VALIDATION experiment ###########
 Typing cv_smo_impr in command line results in:
+
 Usage:
-# training_samples, tr_file
-dim, sigmasqr/degree
-kernelchoice(1:RBF,2:dp 3:poly)
-file format:sparse(1)/dense(0)
-C-array file
-K (cv fold size)
+num_training_samples, tr_file dim, sigmasqr/degree kernelchoice(1:RBF,2:dp 3:poly) file format:sparse(1)/dense(0) C-array file K (cv fold size)
 
 cv_smo_impr takes 8 arguments. Only the arguments that are different from
 arguments of smo_impr are described below:
