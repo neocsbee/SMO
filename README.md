@@ -18,11 +18,7 @@ To know the usage of the executables, just type the executable name in
 the command line. For example, typing smo_impr (produced above) results
 in:
 Usage:
-# training_samples, tr_file
-dim, C, sigmasqr/degree
-# test_samples, Test_file
-kernelchoice(1:RBF,2:dp 3:poly)
-file format:sparse(1)/dense(0)
+ training_samples, tr_file dim, C, sigmasqr/degree test_samples, Test_file kernelchoice(1:RBF,2:dp 3:poly) file format:sparse(1)/dense(0)
 
 smo_impr takes 9 arguments. They are:
 
